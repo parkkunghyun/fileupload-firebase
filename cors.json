@@ -1,0 +1,8 @@
+[
+    {
+      "origin": ["https://drop-in-file-266457465664.us-central1.run.app"],
+      "method": ["GET", "POST", "PUT", "DELETE"],
+      "responseHeader": ["Content-Type", "Authorization"],
+      "maxAgeSeconds": 3600
+    }
+  ]
