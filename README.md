@@ -1,36 +1,39 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# LinguaLens
 
-## Getting Started
+**LinguaLens**는 텍스트, 이미지, 음성을 실시간으로 번역하고 자연스러운 음성으로 전달하는 AI 기반 번역 플랫폼입니다.
 
-First, run the development server:
+[링크 바로가기](https://lingualens-266457465664.us-central1.run.app/)
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## 📄 프로젝트 설명
+LinguaLens는 **Google Cloud Translate API**를 활용하여 다양한 언어로 번역을 지원합니다. 또한 **TTS (Text-to-Speech)** 기술로 번역된 텍스트를 자연스러운 음성으로 변환하고, **OCR (Optical Character Recognition)** 기술을 이용하여 이미지 내의 텍스트를 추출하고 번역하여 이미지 속 정보를 빠르고 정확하게 제공합니다.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 🚀 주요 기능 및 특징
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+- **다국어 번역 및 음성 변환**  
+  - **Google Cloud Vision API**로 이미지 내 텍스트 추출
+  - **Translate API**로 다양한 언어로 번역 지원
+  - **Text-to-Speech API**로 자연스러운 음성 변환
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+- **백엔드 및 서버 관리**  
+  - **FastAPI**로 이미지 분석 및 번역 처리 백엔드 구축
+  - **Cloud Run**을 통해 필요 시 서버를 실행하여 비용 효율적인 서비스 제공
 
-## Learn More
+- **CI/CD 자동화**  
+  - **GitHub Actions**를 활용한 프론트엔드 자동 빌드 및 Cloud Run 배포
+  - 지속적인 배포 환경으로 개발 효율성 향상
 
-To learn more about Next.js, take a look at the following resources:
+- **프론트엔드 기능 개선**  
+  - **React의 useEffect 훅**으로 번역된 텍스트 실시간 출력 및 자동 음성 재생
+  - **Framer Motion**으로 애니메이션 효과 추가
+  - **React Toastify**로 실시간 알림 제공하여 인터랙티브한 UI 구현
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- **효율적인 데이터 관리**  
+  - **Tanstack Query**로 번역 API 호출을 효율적으로 관리하고 에러 처리 간소화
+  - 서버사이드에서 **Google Translate API** 호출로 클라이언트와 분리된 구조 유지, 보안 강화 및 API 호출 최적화
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## ⚙️ 기술 스택
 
-## Deploy on Vercel
+- **Frontend:** Next.js, Framer Motion, Tanstack Query, React Toastify  
+- **GCP API:** Cloud Vision API, Translate API, Text-to-Speech API  
+- **Deployment:** GitHub Actions, Cloud Run
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
